@@ -1,5 +1,13 @@
-@media (max-width: 100px){
-    h1{
-        color: red;
-    }
+.introMsg {
+    text-align: center;
 }
+.introMsg h1{
+    color:teal; 
+    line-height: 0.3;
+
+}
+
+.introMsg p{
+    color:lightseagreen;
+}
+

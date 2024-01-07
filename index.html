@@ -10,25 +10,69 @@
 
     </nav>
 
-    <div>
+    <div class="introMsg">
         <h1>Hi, I'm Carlie!</h1> 
         <p>Future Web developer? Database Administrator? UI/UX Designer? System Analyst?  </p>
 
     </div>
   
-    <h2>Interest & Skills</h2>
-    <h4>Personal Interests</h4>
-    <li>Note-taking </li>
-    <li>Drag Race </li>
-    <li>Manga/Manhwa</li>
-    <li>Reddit </li>
+    <style>
 
-    <h4>Academic Interests</h4>
-    <li>Coding (C#, C++, Python)</li>
-    <li>Database Management (MS Access, MySQL)</li>
-    <li>Web Design</li>
-    <li>Logic Design</li>
+    .flexContainer{
+        display:flex;
+        background-color: blanchedalmond;   
+        justify-content:center;
+        align-content: center;    
+        flex-direction:column;
+        width: 300px;
+        height: 150px;      
+        transition: background-color 1s ease;
+    }
+       
 
+    .flexContainer:hover{
+        background-color: grey;
+        
+    }
+
+    .personalInt{
+        display:block;
+    }
+
+    .academicInt{
+        display:none;
+    }
+
+    .flexContainer:hover .personalInt{
+        display:none;
+    }
+
+    .flexContainer:hover .academicInt{
+        display:block;
+        transition: 1s ease;
+    }
+    </style>
+    
+    <h2>Interests</h2>
+    <div class="flexContainer">
+        <div class="personalInt">
+            <h4>Personal Interests</h4>
+            <li>Note-taking </li>
+            <li>Drag Race </li>
+            <li>Manga/Manhwa</li>
+            <li>Reddit </li>
+        </div>
+            
+        <div class="academicInt">
+            <h4>Academic Interests</h4>
+            <li>Coding (C#, C++, Python)</li>
+            <li>Database Management (MS Access, MySQL)</li>
+            <li>Web Design</li>
+            <li>Logic Design</li>
+        </div>
+    </div>
+    
+    
     <h2>Experience</h2>
 
     1st Year 
