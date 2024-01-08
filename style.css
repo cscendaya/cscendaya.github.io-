@@ -11,3 +11,80 @@
     color:lightseagreen;
 }
 
+/* ---------Interest flexbox---------- */
+
+.flexContainer{
+    display:flex;
+    background-color: blanchedalmond;   
+    align-items: center;    
+    flex-direction:column;
+    width: 400px;
+    height: 160px;      
+    margin:auto; /* div essential */
+}
+
+.flexContainer:hover{
+    background-color: grey;   
+    transition: background-color 1s ease;  
+}
+
+.personalInt{
+    display:block;
+}
+
+.academicInt h4 {text-align:center;}
+
+.academicInt{
+    opacity: 0; 
+}
+
+.flexContainer:hover .personalInt{
+    display:none;
+}
+
+.flexContainer:hover .academicInt{
+    display:block;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+
+/* ----------Headers 2nd Level------------ */
+
+#interests {
+    text-align: center;
+    animation: interests 2s ;
+}
+
+@keyframes interests {
+    from {scale:0}
+
+}
+
+#experiences {
+    text-align: center;
+    color:blue;
+    animation: experiences 3s ease-out;
+}
+
+@keyframes experiences {
+    from {
+        margin-left: -100%;
+        scale:150%;   
+        color:aquamarine;
+    }
+    to{color:blue;
+    transition: 2s}
+
+}
+
+#upcomingProj {
+    text-align: center;
+    animation: upcomingProj 2s ;
+}
+
+@keyframes upcomingProj{
+    from {scale:0}
+
+}
+
