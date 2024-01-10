@@ -6,61 +6,111 @@
     <title>The title</title>
 </head>
 <body>
-    <nav id="desktop-nav">
 
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+
+    <nav id="desktop-nav">
+        <div class="logo" >
+            <img src="https://64.media.tumblr.com/1eebe990c931cb8df1f4d4aec1d23590/ed53a6fde7bdcc60-c4/s400x600/bcfddd355d0b26ffc302e4cc5d8d1a3e180367a7.png" alt="Dimitri sippin' tea">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#upc-projects">Upcoming Projects</a></li>
+        </ul>
     </nav>
 
-    <div class="introMsg">
-        <h1>Hi, I'm Carlie!</h1> 
-        <p>Future Web developer? Database Administrator? UI/UX Designer? System Analyst?  </p>
+    <nav id="mobile-nav">
+        <div class="logo" >
+            <img src="https://64.media.tumblr.com/1eebe990c931cb8df1f4d4aec1d23590/ed53a6fde7bdcc60-c4/s400x600/bcfddd355d0b26ffc302e4cc5d8d1a3e180367a7.png" alt="Dimitri sippin' tea">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
 
-    </div>
-  
-    <h2 id="interests">Interests</h2>
-    <div class="flexContainer">
-        <div class="personalInt">
-            <h4>Personal Interests</h4>
-            <li>Note-taking </li>
-            <li>Drag Race </li>
-            <li>Manga/Manhwa</li>
-            <li>Reddit </li>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About </a></li>
+                    <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
+                    <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+                    <li><a href="#upc-projects" onclick="toggleMenu()">Upcoming Projects</a></li>
+                </div>
+
+            </div>
         </div>
+    </nav>
+
+    <section class="introMsg">
+        <div class="container">
+            <h1>Hi, I'm Carlie!</h1>
+            <p>Future Web developer? Database Administrator? UI/UX Designer? System Analyst? </p>
+
             
-        <div class="academicInt">
-            <h4>Academic Interests</h4>
-            <li>Coding (C#, C++, Python)</li>
-            <li>Database Management (MS Access, MySQL)</li>
-            <li>Web Design</li>
-            <li>Logic Design</li>
+
         </div>
-    </div>
+    </section>
+  
+    <section class="interests" id="interests">
+        <div class="container">
+            <h1 class="interests-heading"> Interests</h1>
+            <div class="flexContainer">
+                <div class="personalInt">
+                    <h4>Personal Interests</h4>
+                    <li>Note-taking </li>
+                    <li>Drag Race </li>
+                    <li>Manga/Manhwa</li>
+                    <li>Reddit </li>
+                    <br>
+                    <p>Hover to see more >></p>
+                </div>
+    
+                <div class="academicInt">
+                    <h4>Academic Interests</h4>
+                    <li>Coding (C#, C++, Python)</li>
+                    <li>Database Management (MS Access, MySQL)</li>
+                    <li>Web Design</li>
+                    <li>Logic Design</li>
+                </div>
+    
+            </div>
+        </div>
+    </section>
     
     
-    <h2 id="experiences">Experiences</h2>
+    <section class="experiences" id="experiences">
+        <div class="container">
+            <h1 class="experiences-heading">Experiences</h1>
+    
+            1st Year
+            <li>Noob in python</li>
+            <li>Enjoyed the fundamentals and UI/UX</li>
+            <li>Achieved Academic Scholarship in 1st Term and 3rd Term</li>
+            <li>Personal struggles</li>
+            <br>
+    
+            Current: <strong>2nd Year</strong>
+            <li>Noob in C#</li>
+            <li>Passed in Data Structure and Algorithms</li>
+            <li>Achieved Academic Scholarship in 1st Term</li>
+            <li>More personal struggles</li>
+        </div>
+    </section>
 
-    1st Year 
-    <li>Noob in python</li>
-    <li>Enjoyed the fundamentals and UI/UX</li>
-    <li>Achieved Academic Scholarship in 1st Term and 3rd Term</li>
-    <li>Personal struggles</li>
-    <br>
-
-    Current: <strong>2nd Year</strong>
-    <li>Noob in C#</li>
-    <li>Passed in Data Structure and Algorithms</li>
-    <li>Achieved Academic Scholarship in 1st Term</li>
-    <li>More personal struggles</li>
-
-    <h2 id="upcomingProj">Upcoming Projects</h2>
-
-    As a noob in coding and to increase my motivation to code, I decided to create personal projects such as: 
-
-    <li>Books and Resource Management</li>
-    <li>Notepad App</li>
-    <li>Redesigning Existing Websites</li>
+    <section class="upcoming-projects" id="upcoming-projects">
+        <div class="container">
+        <h1 class="upcomingProj-heading">Upcoming Projects</h1>
+    
+        As a noob in coding and to increase my motivation to code, I decided to create personal projects such as:
+    
+        <li>Books and Resource Management</li>
+        <li>Notepad App</li>
+        <li>Redesigning Existing Websites</li>
+        </div>
 
 
-   <link rel="stylesheet" href="style.css"/>
-   <script src="script.js"></script>
+
 </body>
 </html>

@@ -1,57 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    font-family:'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* TRANSITION */
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* ----------- Desktop Navigation -------- */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    background-color: lightslategray;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: lightgrey;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    text-decoration-color: white;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+    border-radius: 20%
+}
+
+/* ----------- Intro Msg -------- */
+
 .introMsg {
     text-align: center;
+    background-color: black;
+    padding: 60px;
+
 }
+
+
 .introMsg h1{
     color:teal; 
-    line-height: 0.3;
-
+    line-height: 1.5; 
 }
 
 .introMsg p{
     color:lightseagreen;
 }
 
-/* ---------Interest flexbox---------- */
 
-.flexContainer{
-    display:flex;
-    background-color: blanchedalmond;   
-    align-items: center;    
-    flex-direction:column;
-    width: 400px;
-    height: 160px;      
-    margin:auto; /* div essential */
+
+/* ----------Interests------------ */
+
+.interests {
+    background-color: yellow;
+    padding: 6rem 0;
 }
-
-.flexContainer:hover{
-    background-color: grey;   
-    transition: background-color 1s ease;  
-}
-
-.personalInt{
-    display:block;
-}
-
-.academicInt h4 {text-align:center;}
-
-.academicInt{
-    opacity: 0; 
-}
-
-.flexContainer:hover .personalInt{
-    display:none;
-}
-
-.flexContainer:hover .academicInt{
-    display:block;
-    opacity: 1;
-    transition: all 1s ease;
-}
-
-
-/* ----------Headers 2nd Level------------ */
-
-#interests {
+.interests-heading {
     text-align: center;
     animation: interests 2s ;
 }
@@ -61,7 +101,62 @@
 
 }
 
-#experiences {
+.interests p {
+    font-size: small;
+    text-align: right;
+    color:cadetblue
+}
+
+/* ---------Interest flexbox---------- */
+
+.flexContainer{
+    display:flex; 
+    align-items: center;    
+    flex-direction:column;
+    width: 400px;
+    height: 160px; 
+    margin:auto; /* div essential */
+}     
+
+
+.flexContainer:hover{
+    color:blue; 
+    transition: background-color 1s ease;  
+}
+
+.personalInt{
+    display:block;
+    padding: 40px;
+}
+
+.academicInt h4 {
+    text-align: center;
+}
+
+.academicInt{
+    opacity: 0; 
+}
+
+.flexContainer:hover .personalInt{
+    display:none;
+    transition: all 1s ease;
+}
+
+.flexContainer:hover .academicInt{
+    display:block;
+    padding: 30px;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+
+
+/* ----------Experiences------------ */
+.experiences {
+    background-color: aqua;
+    padding: 6rem 0;
+}
+.experiences-heading {
     text-align: center;
     color:blue;
     animation: experiences 3s ease-out;
@@ -78,7 +173,10 @@
 
 }
 
-#upcomingProj {
+.upcoming-projects{
+    background-color: chartreuse;
+}
+.upcomingProj-heading {
     text-align: center;
     animation: upcomingProj 2s ;
 }
