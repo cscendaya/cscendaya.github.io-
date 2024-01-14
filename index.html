@@ -44,19 +44,46 @@
         </div>
     </nav>
 
-    <section class="introMsg">
-        <div class="container">
+    <section id="introMsg">
+        <div class="introMsg-container">
             <h1>Hi, I'm Carlie!</h1>
             <p>Future Web developer? Database Administrator? UI/UX Designer? System Analyst? </p>
-
-            
-
+            <div class="btn-container">
+                <button 
+                class ="contact"
+                onclick="location.href='./#contact'">
+                Contact Me
+            </button>
+            </div>                   
         </div>
+        <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow-white"
+        onclick="location.href='./#about'"/>
     </section>
   
+    <section id="about">
+        <h1 class="heading"> About Me</h1>
+        <div class="about-content">
+            <div class="about-pic">
+                <img src="./assets/carlie selfie.jpg" alt="carlie about pic">
+            </div>
+            <div class="about-texts">
+                <h2>As An IT student...</h2>
+                <p class="about-text">
+                    I strive to create what I need and be consistent. 
+                    Hopefully, this personal website can turn into something more, something better.
+                </p>
+                <br>
+                <h3 class="quote">Don't let what you cannot do interfere with what you can do.</h3>
+                <h4 class="quote-author">- John Wooden</h4>
+            </div>             
+        </div>
+        <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow"
+        onclick="location.href='./#interests'"/>
+        
+    </section>
+
     <section class="interests" id="interests">
-        <div class="container">
-            <h1 class="interests-heading"> Interests</h1>
+            <h1 class="heading"> Skills and Interests</h1>
             <div class="flexContainer">
                 <div class="personalInt">
                     <h4>Personal Interests</h4>
@@ -75,15 +102,67 @@
                     <li>Web Design</li>
                     <li>Logic Design</li>
                 </div>
-    
             </div>
-        </div>
+
+
+            <style>
+                .interests table, th, td{
+                    border-color: #f0f0f0;
+                    border: 0.5px solid;
+                    padding: 0.5rem
+                }
+            </style>
+
+            <div class="interests">
+                <table max-width="350">
+                    <tr>
+                        <th></th>
+                        <th>Proficiency</th>
+                        <th>Interest</th>
+                    </tr>
+                    <tr>
+                        <th>Python, C#, C++</th>
+                        <td>Basic</td>
+                        <td>⭐⭐</td>
+                    </tr>
+
+                    <tr>
+                        <th>HTML</th>
+                        <td>Beginner</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <th>CSS</th>
+                        <td>Beginner</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <th>Javascript</th>
+                        <td>Noob</td>
+                        <td>⭐⭐</td>
+                    </tr>
+                    <tr>
+                        <th>MS Access</th>
+                        <td>Beginner</td>
+                        <td>⭐⭐⭐</td>
+                    </tr>
+                    <tr></tr>
+                        <th>MySQL</th>
+                        <td>Beginner</td>
+                        <td>⭐⭐⭐⭐</td>
+                    </tr>
+                    
+                </table>
+            </div>
+
+           
+        
     </section>
     
     
     <section class="experiences" id="experiences">
-        <div class="container">
-            <h1 class="experiences-heading">Experiences</h1>
+
+            <h1 class="heading">Experiences</h1>
     
             1st Year
             <li>Noob in python</li>
@@ -97,19 +176,19 @@
             <li>Passed in Data Structure and Algorithms</li>
             <li>Achieved Academic Scholarship in 1st Term</li>
             <li>More personal struggles</li>
-        </div>
+
     </section>
 
     <section class="upcoming-projects" id="upcoming-projects">
-        <div class="container">
-        <h1 class="upcomingProj-heading">Upcoming Projects</h1>
+
+        <h1 class="heading">Upcoming Projects</h1>
     
         As a noob in coding and to increase my motivation to code, I decided to create personal projects such as:
     
         <li>Books and Resource Management</li>
         <li>Notepad App</li>
         <li>Redesigning Existing Websites</li>
-        </div>
+
 
 
 
