@@ -98,7 +98,6 @@ a:hover {
     position: absolute;
     top: -50%;
     left: 0px;
- 
     width: fit-content;
     max-height: 0%;
     overflow:hidden;
@@ -118,7 +117,6 @@ a:hover {
 .menu-links a:hover{
     background-color:rgba(72, 72, 72, 0.626);
 }
-
 
 .menu-links li{
     list-style: none;
@@ -288,6 +286,7 @@ section {
     background-color: black;
     padding: 6rem 0;
     color: white;
+    position: relative;
 }
 .interests-heading {
     text-align: center;
@@ -354,6 +353,7 @@ section {
 .experiences {
     background-color: aquamarine;
     padding: 6rem 0;
+    position: relative;
 }
 .experiences-heading {
     text-align: center;
