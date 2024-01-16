@@ -10,34 +10,34 @@
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
     <script src="script.js"></script>
+    <a href="#"></a>
 
     <nav id="desktop-nav">
-        <div class="logo" >
+        <div class="logo">
             <img src="https://64.media.tumblr.com/1eebe990c931cb8df1f4d4aec1d23590/ed53a6fde7bdcc60-c4/s400x600/bcfddd355d0b26ffc302e4cc5d8d1a3e180367a7.png" alt="Dimitri sippin' tea">
         </div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#interests">Interests</a></li>
-            <li><a href="#experiences">Experiences</a></li>
             <li><a href="#upc-projects">Upcoming Projects</a></li>
         </ul>
     </nav>
 
     <nav id="hamburger-nav">
-        <div class="logo" >
-            <img src="https://64.media.tumblr.com/1eebe990c931cb8df1f4d4aec1d23590/ed53a6fde7bdcc60-c4/s400x600/bcfddd355d0b26ffc302e4cc5d8d1a3e180367a7.png" alt="Dimitri sippin' tea">
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About </a></li>
-                    <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
-                    <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
-                    <li><a href="#upc-projects" onclick="toggleMenu()">Upcoming Projects</a></li>
-                </div>
+        <div class="logo">
+            <img src="https://64.media.tumblr.com/1eebe990c931cb8df1f4d4aec1d23590/ed53a6fde7bdcc60-c4/s400x600/bcfddd355d0b26ffc302e4cc5d8d1a3e180367a7.png"
+                alt="Dimitri sippin' tea">
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About </a></li>
+                <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
+                <li><a href="#upcoming-projects" onclick="toggleMenu()">Upcoming Projects</a></li>
             </div>
         </div>
     </nav>
@@ -54,7 +54,7 @@
             </button>
             </div>                   
         </div>
-        <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow-white"
+        <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow-home"
         onclick="location.href='./#about'"/>
     </section>
   
@@ -62,8 +62,26 @@
         <h1 class="heading"> About Me</h1>
         <div class="about-content">
             <div class="about-pic">
-                <img src="./assets/carlie selfie.jpg" alt="carlie about pic">
+                <img src="./assets/carlie selfie.jpg" alt="carlie about pic" id="carlie">
+                <style>
+                    #carlie {
+                        box-shadow: 15px 12px aquamarine; 
+                        animation: shadow 4s ease-in-out infinite;                 
+                    }
+
+                    @keyframes shadow {
+                        0%, 100%
+                        {
+                            box-shadow: 15px 12px aquamarine
+
+                        }
+                        50%{
+                            box-shadow: 15px 12px white
+                        }
+                    }
+                </style>
             </div>
+            
             <div class="about-texts">
                 <h2>As An IT student...</h2>
                 <p class="about-text">
@@ -76,39 +94,65 @@
             </div>             
         </div>
         <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow"
-        onclick="location.href='./#interests'"/>
-        
+        onclick="location.href='./#interests'"/>       
     </section>
 
     <section class="interests" id="interests">
             <h1 class="heading"> Skills and Interests</h1>
             <div class="flexContainer">
                 <div class="personalInt">
-                    <h4>Personal Interests</h4>
-                    <li>Note-taking </li>
-                    <li>Drag Race </li>
-                    <li>Manga/Manhwa</li>
-                    <li>Reddit </li>
-                    <br>
+                    <h4>Personal Experience</h4>
+                    <h5>Programming in general is the greatest challenge I had ever taken.
+                        Considering that its skill sets aren't aligned to what I had honed the past years, 
+                        I'm still having a hard time being comfortable with it.
+                    </h5>
+    
                     <p>Hover to see more >></p>
                 </div>
     
                 <div class="academicInt">
-                    <h4>Academic Interests</h4>
-                    <li>Coding (C#, C++, Python)</li>
-                    <li>Database Management (MS Access, MySQL)</li>
-                    <li>Web Design</li>
-                    <li>Logic Design</li>
+                    <h4>Academic Experience</h4>
+                    <h5> However, all in all, I still enjoy nevertheless.
+                        I love to learn and explore more about the world of Programming.
+                        Hopefully, once I managed to balance my life-aspects, surely I will be able
+                        to manage how to be good at this game.
                 </div>
             </div>
 
-
             <style>
-                .interests table, th, td{
-                    border-color: #f0f0f0;
-                    border: 0.5px solid;
-                    padding: 0.5rem
-                }
+        table {
+            width: 65%;
+            border-collapse: collapse;
+            margin-top: -4rem;
+            margin-bottom: 1px;
+            table-layout: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Animation styles */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        #star {
+            animation: fadeIn 3s ease-in infinite;
+        }
+
             </style>
 
             <div class="interests">
@@ -121,155 +165,47 @@
                     <tr>
                         <th>Python, C#, C++</th>
                         <td>Basic</td>
-                        <td>⭐⭐</td>
+                        <td id="star">⭐⭐</td>
                     </tr>
 
                     <tr>
                         <th>HTML</th>
                         <td>Beginner</td>
-                        <td>⭐⭐⭐</td>
+                        <td id="star">⭐⭐⭐</td>
                     </tr>
                     <tr>
                         <th>CSS</th>
                         <td>Beginner</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td id="star">⭐⭐⭐⭐</td>
                     </tr>
                     <tr>
                         <th>Javascript</th>
                         <td>Noob</td>
-                        <td>⭐⭐</td>
+                        <td id="star">⭐⭐</td>
                     </tr>
                     <tr>
                         <th>MS Access</th>
                         <td>Beginner</td>
-                        <td>⭐⭐⭐</td>
+                        <td id="star">⭐⭐⭐</td>
                     </tr>
                     <tr></tr>
                         <th>MySQL</th>
                         <td>Beginner</td>
-                        <td>⭐⭐⭐⭐</td>
+                        <td id="star">⭐⭐⭐⭐</td>
                     </tr>
                     
                 </table>
             </div>
             <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow"
-        onclick="location.href='./#experiences'"/>
-
-           
-        
+        onclick="location.href='./#upcoming-projects'"/>
     </section>
-    
-    
-    <section class="experiences" id="experiences">
 
-            <h1 class="heading">Experiences</h1>
-    
-            <!-- 1st Year
-            <li>Noob in python</li>
-            <li>Enjoyed the fundamentals and UI/UX</li>
-            <li>Achieved Academic Scholarship in 1st Term and 3rd Term</li>
-            <li>Personal struggles</li>
-            <br>
-    
-            Current: <strong>2nd  Year</strong>
-            <li>Noob in C#</li>
-            <li>Passed in Data Structure and Algorithms</li>
-            <li>Achieved Academic Scholarship in 1st Term</li>
-            <li>More personal struggles</li> -->
-
-            <style>
-            .about-containers {
-            gap: 2rem;
-            margin-bottom: 2rem;
-            margin-top: 2rem;
-            }
-            .about-details-container {
-            justify-content: center;
-            flex-direction: column;
-            }
-
-            .about-containers,
-            .about-details-container {
-            display: flex;
-            }
-            .details-container {
-            padding: 1.5rem;
-            flex: 1;
-            background: white;
-            border-radius: 2rem;
-            border: rgb(53, 53, 53) 0.1rem solid;
-            border-color: rgb(163, 163, 163);
-            text-align: center;
-            }
-            .experience-details-container {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            }
-            .article-container {
-            display: flex;
-            text-align: initial;
-            flex-wrap: wrap;
-            flex-direction: row;
-            gap: 2.5rem;
-            justify-content: space-around;
-            }
-
-            article {
-            display: flex;
-            width: 10rem;
-            justify-content: space-around;
-            gap: 0.5rem;
-            }
-
-
-
-            </style>
-            <div class="experience-details-container">
-                <div class="about-containers">
-                    <div class="details-containers">
-                        <h2 class="experience-sub-title">Banana</h2>
-                        <div class="article-container">
-                            <article>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </article>
-                            <article>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </article>
-                            <article>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-containers">
-                        <h2 class="experience-sub-title">Fruit</h2>
-                        <div class="article-container">
-                            <article>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </article>
-                            <article>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </article>
-                            <article>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow"
-        onclick="location.href='./#upc-projects'"/>
-
-    </section>
+    <section class="projects" id="projects">
+        <h1 class="heading">Upcoming Projects</h1>
+            
+          </section>
 
     <section class="upcoming-projects" id="upcoming-projects">
-
         <h1 class="heading">Upcoming Projects</h1>
     
         As a noob in coding and to increase my motivation to code, I decided to create personal projects such as:
@@ -277,6 +213,75 @@
         <li>Books and Resource Management</li>
         <li>Notepad App</li>
         <li>Redesigning Existing Websites</li>
+        <img src="./assets/up-arrow.png" alt="up arrow icon" class="up-arrow"
+        onclick="location.href='./#'"/>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+          </div>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+          </div>
+    </section> 
 
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="heading">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+    <footer>
+        <nav>
+          <div class="copyright">
+            <p>Copyright &#169; 2023 Carlie Endaya. All Rights Reserved.</p>
+          </div>
+        </nav>
+      </footer>
 </body>
 </html>
