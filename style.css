@@ -303,7 +303,7 @@ section {
     right: 6rem;
     cursor:pointer;
     width: 60px;
-    transform: translate(-50%, -100%);   
+    transform: translate(-50%, -125%);   
 }
 
 .up-arrow {
@@ -384,16 +384,17 @@ section {
     background-color: black;
 }
 
-.upc-pic1 {
-    width: 170px;
-    height: 170px;
+
+.upc-pic {
+    width: 150px;
+    height: 150px;
     border-radius: 20%;
 
 }
 
-.upc-pic {
-    width: 170px;
-    height: 170px;
+.upc-pic1 {
+    width: 130px;
+    height: 130px;
     border-radius: 20%;
 
 }
@@ -406,21 +407,21 @@ section {
     border-color: aquamarine;
     background: rgba(250, 250, 250, 0);
     margin: 2rem auto;
-    padding: 0.9rem;
+    padding: 0.5rem;
     width: 60%;
     box-sizing: border-box;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
 .upc-info-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
 }
 
 .upc-info-container p{
@@ -438,7 +439,7 @@ section {
     border: aquamarine 0.1rem solid;
     background-color: black;
     color: aquamarine;
-    margin-top: -4%;
+
 }
 
 .upc-button:hover{
