@@ -11,6 +11,7 @@
         position: relative;
         right: 55px;
     }
+    
 }
 
 
@@ -18,7 +19,25 @@
     th, td {
         width: 100%;
         font-size: 0.8em;
-
     }
+
+    .about-pic img {
+        height: 330px;
+        border-radius: 2rem;
+    }
+
+    .down-arrow, .up-arrow, .down-arrow-home {
+        display: none;
+      }
+
+      .contact-info-container p {
+        font-size: larger;
+      }
+    
+      .contact-info-container p:hover {
+        font-size: 25px;
+        animation: gmail 2s ease-out;
+      }
+    
 
 }

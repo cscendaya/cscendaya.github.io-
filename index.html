@@ -7,6 +7,7 @@
 </head>
 <body>
 
+
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
     <script src="script.js"></script>
@@ -63,25 +64,7 @@
         <div class="about-content">
             <div class="about-pic">
                 <img src="./assets/carlie selfie.jpg" alt="carlie about pic" id="carlie">
-                <style>
-                    #carlie {
-                        box-shadow: 15px 12px aquamarine; 
-                        animation: shadow 4s ease-in-out infinite;                 
-                    }
-
-                    @keyframes shadow {
-                        0%, 100%
-                        {
-                            box-shadow: 15px 12px aquamarine
-
-                        }
-                        50%{
-                            box-shadow: 15px 12px white
-                        }
-                    }
-                </style>
-            </div>
-            
+            </div>         
             <div class="about-texts">
                 <h2>As An IT student...</h2>
                 <p class="about-text">
@@ -200,80 +183,57 @@
         onclick="location.href='./#upcoming-projects'"/>
     </section>
 
-    <section class="projects" id="projects">
-        <h1 class="heading">Upcoming Projects</h1>
-            
-          </section>
-
     <section class="upcoming-projects" id="upcoming-projects">
         <h1 class="heading">Upcoming Projects</h1>
-    
-        As a noob in coding and to increase my motivation to code, I decided to create personal projects such as:
-    
-        <li>Books and Resource Management</li>
-        <li>Notepad App</li>
-        <li>Redesigning Existing Websites</li>
-        <img src="./assets/up-arrow.png" alt="up arrow icon" class="up-arrow"
-        onclick="location.href='./#'"/>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-              <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-              />
-              <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-              />
-              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        <div class="upc-info-upper-container">
+            <div class="upc-info-container">
+                <img
+                src="https://cdn-icons-png.flaticon.com/128/12828/12828373.png"
+                alt="tshirt"
+                class="upc-pic1"/>
+              <p>T-shirt Supplier System Database</p>
+              <button
+                    class="upc-button"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
             </div>
           </div>
-          <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-              <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-              />
-              <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-              <img
-                src="./assets/linkedin.png"
+
+          <div class="upc-info-upper-container">
+            <div class="upc-info-container">
+                <img
+                src="./assets/fe3h.jpg"
                 alt="LinkedIn icon"
-                class="icon contact-icon"
-              />
-              <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+                class="upc-pic"/>
+              <p>Fire Emblem Three Houses Management Database</p>
+              <button
+                    class="upc-button"
+                    onclick="location.href='https://github.com/'"
+                  >
+                    Github
+                  </button>
             </div>
           </div>
+          <img src="./assets/down-arrow-white.png" alt="arrow icon" class="down-arrow"
+        onclick="location.href='./#upcoming-projects'"/>
     </section> 
 
     <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
         <h1 class="heading">Contact Me</h1>
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
             <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
+              src="./assets/gmail.png"
+              alt="gmail icon"
+              class="mail"
             />
-            <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-          </div>
-          <div class="contact-info-container">
-            <img
-              src="./assets/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            <p><a href="mailto:carlieshaye24@gmail.com">carlieshaye24@gmail.com</a></p>
           </div>
         </div>
+        <img src="./assets/up-arrow.png" alt="up arrow icon" class="up-arrow"
+        onclick="location.href='./#'"/>
       </section>
 
     <footer>
@@ -283,5 +243,7 @@
           </div>
         </nav>
       </footer>
+
+
 </body>
 </html>
