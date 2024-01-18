@@ -23,6 +23,8 @@ For me, flexboxes are a great tool to use, because of its complexity. But becaus
 
 Additionally, the whole structure of the website is too simple. I also realized that just creating a vague structural idea of the website through handwriting is not enough, so I have to utilize tools like figma to better prepare and strategize how to create websites. 
 
+Lastly, the media query part was an area that I haven't explored much with. It was evident especially in the part that I have to manually adjust some images and structures to create the ideal look for them when resized. The arrow (to redirect to a certain part in the website) placement were hard for me to finalize. I believe this is where my lack of flexbox and div/class/id knowledge comes in. I really hope to improve this because the whole structure was honestly messy to look at, and there were some redundancies in my code. 
+
 <h3>Other Remarks</h3>
 
 Overall, it was a rollercoaster ride for me. I spent a lot of days and spent a lot of hours on a lot of small processes here and there in this website, but I am thankful that I learned to understand and manipulate them in any way I need and want. Though it is not as clean as I thought (especially in the coding part of it), it's okay because I realized the flaws and improvement I can do to be a better web developer. 
